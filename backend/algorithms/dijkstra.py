@@ -2,7 +2,7 @@ import heapq
 
 def dijkstra(graph, start_node):
     distances = {node: float('inf') for node in graph}
-    distances['start_node'] = 0
+    distances[start_node] = 0
     priority_queue = [(0, start_node)]
 
     while priority_queue:
